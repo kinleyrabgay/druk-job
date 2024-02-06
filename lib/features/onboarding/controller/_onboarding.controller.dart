@@ -1,4 +1,4 @@
-import 'package:druk_job/features/authentication/register/register_screen.dart';
+import 'package:druk_job/features/authentication/login/login_screen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -28,7 +28,7 @@ class OnboardingController extends GetxController {
     if (currentPageIndex.value == 2) {
       final deviceStorage = GetStorage();
       deviceStorage.write('isFirstTime', false);
-      Get.offAll(() => const RegisterScreen());
+      Get.offAll(() => const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

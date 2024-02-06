@@ -1,4 +1,4 @@
-import 'package:druk_job/features/onboarding/controller/onboarding.dart';
+import 'package:druk_job/features/onboarding/controller/_onboarding.controller.dart';
 import 'package:druk_job/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 

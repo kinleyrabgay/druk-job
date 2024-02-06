@@ -11,9 +11,11 @@ class DJTextFieldTheme {
     // constraints: const BoxConstraints.expand(height: 14)
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: DJColors.grey),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: DJColors.grey),
-    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+    errorStyle:
+        const TextStyle().copyWith(fontSize: 12, fontStyle: FontStyle.normal),
     contentPadding:
         const EdgeInsets.symmetric(vertical: 18.0, horizontal: 12.0),
+
     floatingLabelStyle: const TextStyle().copyWith(
       color: Colors.black.withOpacity(0.8),
     ),
@@ -51,7 +53,8 @@ class DJTextFieldTheme {
     // constraints: const BoxConstraints.expand(height: 14)
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
-    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
+    errorStyle:
+        const TextStyle().copyWith(fontSize: 12, fontStyle: FontStyle.normal),
     contentPadding:
         const EdgeInsets.symmetric(vertical: 18.0, horizontal: 12.0),
     floatingLabelStyle: const TextStyle().copyWith(

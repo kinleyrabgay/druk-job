@@ -1,8 +1,8 @@
-import 'package:druk_job/features/onboarding/controller/onboarding.dart';
-import 'package:druk_job/features/onboarding/screen/widgets/onboarding_navigation.dart';
-import 'package:druk_job/features/onboarding/screen/widgets/onboarding_next_button.dart';
-import 'package:druk_job/features/onboarding/screen/widgets/onboarding_page.dart';
-import 'package:druk_job/features/onboarding/screen/widgets/onboarding_skip.dart';
+import 'package:druk_job/features/onboarding/controller/_onboarding.controller.dart';
+import 'package:druk_job/features/onboarding/screen/widgets/_onboarding.navigation.dart';
+import 'package:druk_job/features/onboarding/screen/widgets/_onboarding.next_button.dart';
+import 'package:druk_job/features/onboarding/screen/widgets/_onboarding.page.dart';
+import 'package:druk_job/features/onboarding/screen/widgets/_onboarding.skip.dart';
 import 'package:druk_job/utils/constants/image.dart';
 import 'package:druk_job/utils/constants/text.dart';
 import 'package:flutter/material.dart';
