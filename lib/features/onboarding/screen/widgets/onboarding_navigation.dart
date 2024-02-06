@@ -17,7 +17,7 @@ class OnboardingDotNavigation extends StatelessWidget {
     final dark = DJHelperFunctions.isDarkMode(context);
 
     return Positioned(
-      bottom: DJDeviceUtils.getBottomNavigationBarHeight() + 35,
+      bottom: DJDeviceUtils.getBottomNavigationBarHeight() + 30,
       left: DJSizes.defaultSpace,
       child: SmoothPageIndicator(
         effect: ExpandingDotsEffect(

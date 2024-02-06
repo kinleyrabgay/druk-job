@@ -5,18 +5,17 @@ class DJTextString {
   // Global
 
   // Onboarding title text
-  static const String onBoardingTitle1 = "Auction houses from around the world";
-  static const String onBoardingTitle2 = "Buy art from premier gallery Bidart";
-  static const String onBoardingTitle3 =
-      "Upload and sell your best work exploration";
+  static const String onBoardingTitle1 = "Embark on Your Career Journey";
+  static const String onBoardingTitle2 = "Explore Your Career Options";
+  static const String onBoardingTitle3 = "Streamlined Application Process";
 
   // Onboarding sub-title text
   static const String onBoardingSubTitle1 =
-      "Welcome to a World of Limitless Choices - Your Perfect Product Awaits!";
+      "Your personalized gateway to a world of exciting career opportunities, tailored just for you.";
   static const String onBoardingSubTitle2 =
-      "For Seamless Transactions, Choose Your Payment Path - Your Convenience, Our Priority!";
+      "Dive into a diverse array of job possibilities and uncover the perfect match for your skills and aspirations.";
   static const String onBoardingSubTitle3 =
-      "From Our Doorstep to Yours - Swift, Secure, and Contactless Delivery!";
+      "Simplify your job hunt and streamline the application process with the intuitive features of Druk Job.";
 
   // --------------------------------- AUTHENTICATION ------------------------------
   static const String authEmailTitle = "Enter your email address";
