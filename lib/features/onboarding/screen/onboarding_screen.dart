@@ -1,4 +1,4 @@
-import 'package:druk_job/features/onboarding/controller/onboarding_controller.dart';
+import 'package:druk_job/features/onboarding/controller/onboarding.dart';
 import 'package:druk_job/features/onboarding/screen/widgets/onboarding_navigation.dart';
 import 'package:druk_job/features/onboarding/screen/widgets/onboarding_next_button.dart';
 import 'package:druk_job/features/onboarding/screen/widgets/onboarding_page.dart';

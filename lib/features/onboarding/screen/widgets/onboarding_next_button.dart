@@ -1,4 +1,4 @@
-import 'package:druk_job/features/onboarding/controller/onboarding_controller.dart';
+import 'package:druk_job/features/onboarding/controller/onboarding.dart';
 import 'package:druk_job/utils/constants/colors.dart';
 import 'package:druk_job/utils/constants/sizes.dart';
 import 'package:druk_job/utils/device/device_utility.dart';

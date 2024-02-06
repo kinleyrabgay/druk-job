@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: DJColors.primary,
         body: Center(
           child: CircularProgressIndicator(
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
       ),
