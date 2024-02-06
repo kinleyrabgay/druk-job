@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056605330340",
+    "project_id": "druk-job",
+    "storage_bucket": "druk-job.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056605330340:android:4a022835afc70cbe297f31",
+        "android_client_info": {
+          "package_name": "com.example.druk_job"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056605330340-ue6jfts9bcb0vn8rkvhtvbqusjjrbpvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHHvT3UbV2U2N-4ROucUYx5RlM3gJVUaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056605330340-ue6jfts9bcb0vn8rkvhtvbqusjjrbpvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
