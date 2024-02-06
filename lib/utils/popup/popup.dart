@@ -4,7 +4,7 @@ import 'package:druk_job/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class FAFullScreenLoader {
+class DJFullScreenLoader {
   static void openLoadingDialog(String text, String animation) {
     showDialog(
       context: Get.overlayContext!,

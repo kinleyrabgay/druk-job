@@ -1,6 +1,11 @@
 // ------------------ Navigation ------------------------ //
 import 'package:druk_job/common/widgets/icons.dart';
+import 'package:druk_job/features/job/job.screen.dart';
+import 'package:druk_job/features/organization/organization.screen.dart';
+import 'package:druk_job/features/personalization/profile/profile.screen.dart';
+import 'package:druk_job/features/resume/resume.screen.dart';
 import 'package:druk_job/utils/constants/colors.dart';
+import 'package:druk_job/utils/constants/image.dart';
 import 'package:flutter/material.dart';
 
 class NavigationMenu extends StatefulWidget {
@@ -13,29 +18,21 @@ class NavigationMenu extends StatefulWidget {
 }
 
 class _NavigationMenuState extends State<NavigationMenu> {
+  int currentPageIndex = 0;
+  List<Widget> pages = [
+    const JobScreen(),
+    const ResumeScreen(),
+    const OrganizationScreen(),
+    const ProfileScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
-    int currentPageIndex = 0;
-    List<Widget> pages = [
-      Container(
-        color: DJColors.accent,
-      ),
-      Container(
-        color: DJColors.grey,
-      ),
-      Container(
-        color: DJColors.buttonDisabled,
-      ),
-      Container(
-        color: DJColors.borderPrimary,
-      ),
-    ];
-
     return Scaffold(
+      backgroundColor: DJColors.white,
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: currentPageIndex,
-        selectedItemColor: const Color(0xfffe416c),
+        selectedItemColor: DJColors.primary,
         selectedLabelStyle: const TextStyle(fontSize: 13),
         onTap: (index) {
           setState(() {
@@ -45,36 +42,32 @@ class _NavigationMenuState extends State<NavigationMenu> {
         items: [
           BottomNavigationBarItem(
             icon: DJIconImage(
-              image: "home.png",
+              image: DJImageString.jobsIcon,
               index: 0,
-              currentIndex: currentPageIndex,
               isSelected: 0 == currentPageIndex,
             ),
-            label: "Explore",
+            label: "Jobs",
           ),
           BottomNavigationBarItem(
             icon: DJIconImage(
-              image: "categories.png",
+              image: DJImageString.resumeIcon,
               index: 1,
-              currentIndex: currentPageIndex,
               isSelected: 1 == currentPageIndex,
             ),
-            label: "Auction",
+            label: "Resumes",
           ),
           BottomNavigationBarItem(
             icon: DJIconImage(
-              image: "chat.png",
+              image: DJImageString.orgsIcon,
               index: 2,
-              currentIndex: currentPageIndex,
               isSelected: 2 == currentPageIndex,
             ),
-            label: "Chat",
+            label: "Orgs",
           ),
           BottomNavigationBarItem(
             icon: DJIconImage(
-              image: "profile.png",
+              image: DJImageString.profileIcon,
               index: 3,
-              currentIndex: currentPageIndex,
               isSelected: 3 == currentPageIndex,
             ),
             label: "Profile",

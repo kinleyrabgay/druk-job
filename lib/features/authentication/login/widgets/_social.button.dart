@@ -1,3 +1,4 @@
+import 'package:druk_job/features/authentication/login/controller/_login.controller.dart';
 import 'package:druk_job/utils/constants/colors.dart';
 import 'package:druk_job/utils/constants/image.dart';
 import 'package:druk_job/utils/constants/sizes.dart';
@@ -10,12 +11,13 @@ class SocialButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = LoginController.instance;
     return Column(
       children: [
         SizedBox(
           width: double.infinity,
           child: OutlinedButton(
-            onPressed: () {},
+            onPressed: () => controller.googleSignIn(),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

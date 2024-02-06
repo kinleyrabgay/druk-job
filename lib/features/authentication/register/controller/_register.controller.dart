@@ -43,7 +43,7 @@ class RegisterController extends GetxController {
     // --- Check internet connectivity
     final isConnected = await NetworkManager.instance.isConnected();
     if (!isConnected) {
-      FAFullScreenLoader.stopLoading();
+      DJFullScreenLoader.stopLoading();
       return;
     }
   }

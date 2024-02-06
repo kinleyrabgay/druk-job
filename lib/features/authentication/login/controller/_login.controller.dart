@@ -1,8 +1,13 @@
 // ---------------- Login Controller -------------------------------
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:druk_job/common/network/network_manager.dart';
+import 'package:druk_job/data/repositories/authentication.dart';
 import 'package:druk_job/features/authentication/login/_login.authenticate.dart';
 import 'package:druk_job/features/authentication/register/register_screen.dart';
+import 'package:druk_job/features/personalization/controller/user.controller.dart';
+import 'package:druk_job/utils/constants/image.dart';
+import 'package:druk_job/utils/loader/loader.dart';
+import 'package:druk_job/utils/popup/popup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -22,6 +27,9 @@ class LoginController extends GetxController {
 
   // --- Storage
   final localStorage = GetStorage();
+
+  // --- Controller
+  final userController = Get.put(UserController());
 
   // ----- Init --------
   @override
@@ -58,7 +66,38 @@ class LoginController extends GetxController {
   }
 
   // ----- Google Login ------------------
-  Future<void> googleSignIn() async {}
+  Future<void> googleSignIn() async {
+    try {
+      // --- Loading
+      DJFullScreenLoader.openLoadingDialog(
+        'Logging you in...',
+        DJImageString.loading,
+      );
+
+      // --- Internet
+      final isConnected = await NetworkManager.instance.isConnected();
+      if (!isConnected) {
+        DJFullScreenLoader.stopLoading();
+        return;
+      }
+
+      // --- Google auth
+      final userCredentials =
+          await AuthenticationRepository.instance.signInWIthGoogle();
+
+      // --- Save user records
+      await userController.saveUserRecord(userCredentials);
+
+      // --- Remove loader
+      DJFullScreenLoader.stopLoading();
+
+      // Redirect
+      AuthenticationRepository.instance.screenRedirect();
+    } catch (e) {
+      DJFullScreenLoader.stopLoading();
+      DJLoaders.errorSnackBar(title: 'Oh Snap!', message: e.toString());
+    }
+  }
 
   // ----- Facebook Login ------------------
   Future<void> facebookSignIn() async {}

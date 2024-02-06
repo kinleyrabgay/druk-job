@@ -10,6 +10,9 @@ class DJImageString {
   static const String aution = 'assets/menu/home.png';
   static const String profile = 'assets/menu/home.png';
 
+  // Loading
+  static const String loading = "assets/lotties/loading.json";
+
   // Social Button
   static const String goggle = "assets/images/social/google.png";
   static const String facebook = "assets/images/social/facebook.png";
@@ -34,4 +37,14 @@ class DJImageString {
 
   // Banner
   static const String bannerImage = "assets/images/banner.jpg";
+
+  // Navigation Menu
+  static const String jobsIcon = "assets/images/menu/job.png";
+  static const String resumeIcon = "assets/images/menu/resumes.png";
+  static const String orgsIcon = "assets/images/menu/orgs.png";
+  static const String profileIcon = "assets/images/menu/profile.png";
+
+  static const String homeIcon = "assets/images/menu/home.png";
+  static const String chatIcon = "assets/images/menu/chat.png";
+  static const String categoryIcon = "assets/images/menu/categories.png";
 }

@@ -15,7 +15,7 @@ class LoginAuthenticate extends StatelessWidget {
     return Scaffold(
       backgroundColor: DJColors.white,
       appBar: AppBar(),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.all(DJSizes.defaultSpace),

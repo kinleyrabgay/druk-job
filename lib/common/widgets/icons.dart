@@ -1,3 +1,4 @@
+import 'package:druk_job/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class DJIconImage extends StatelessWidget {
@@ -5,13 +6,11 @@ class DJIconImage extends StatelessWidget {
     Key? key,
     required this.image,
     this.index,
-    this.currentIndex,
     this.isSelected = false,
   }) : super(key: key);
 
   final String image;
   final int? index;
-  final int? currentIndex;
   final bool isSelected;
 
   @override
@@ -20,9 +19,8 @@ class DJIconImage extends StatelessWidget {
       image,
       height: 25,
       width: 25,
-      // color: index == currentIndex ? const Color(0xfffe416c) : Colors.black,
       color:
-          isSelected ? const Color(0xfffe416c) : Colors.black.withOpacity(0.4),
+          isSelected ? DJColors.primary : DJColors.darkerGrey.withOpacity(0.4),
     );
   }
 }
