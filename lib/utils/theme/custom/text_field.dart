@@ -8,14 +8,13 @@ class DJTextFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: DJColors.grey,
     suffixIconColor: DJColors.darkGrey,
-    // constraints: const BoxConstraints.expand(height: 14)
+    // constraints: const BoxConstraints.expand(height: 200),
     labelStyle: const TextStyle().copyWith(fontSize: 14, color: DJColors.grey),
     hintStyle: const TextStyle().copyWith(fontSize: 14, color: DJColors.grey),
     errorStyle:
         const TextStyle().copyWith(fontSize: 12, fontStyle: FontStyle.normal),
     contentPadding:
         const EdgeInsets.symmetric(vertical: 18.0, horizontal: 12.0),
-
     floatingLabelStyle: const TextStyle().copyWith(
       color: Colors.black.withOpacity(0.8),
     ),

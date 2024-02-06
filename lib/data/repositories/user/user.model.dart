@@ -10,7 +10,7 @@ class UserModel {
     required this.lastName,
     required this.phoneNumber,
     required this.profilePicture,
-    required this.coverPhoto,
+    this.coverPhoto,
   });
 
   final String id;
@@ -20,7 +20,7 @@ class UserModel {
   final String email;
   String phoneNumber;
   String profilePicture;
-  String coverPhoto;
+  String? coverPhoto;
 
   // Helper
   String get fullName => '$firstName $lastName';

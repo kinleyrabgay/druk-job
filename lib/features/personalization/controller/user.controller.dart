@@ -15,6 +15,7 @@ class UserController extends GetxController {
 
   final hidePassword = false.obs;
   final imageUploading = false.obs;
+  final coverUploading = false.obs;
   final verifyEmail = TextEditingController();
   final verifyPassword = TextEditingController();
 
@@ -50,7 +51,6 @@ class UserController extends GetxController {
             username: username,
             phoneNumber: userCredential.user!.phoneNumber ?? '',
             profilePicture: userCredential.user!.photoURL ?? '',
-            coverPhoto: userCredential.user!.photoURL ?? '',
           );
 
           // Save user data

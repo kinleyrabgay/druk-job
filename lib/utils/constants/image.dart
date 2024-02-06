@@ -47,4 +47,8 @@ class DJImageString {
   static const String homeIcon = "assets/images/menu/home.png";
   static const String chatIcon = "assets/images/menu/chat.png";
   static const String categoryIcon = "assets/images/menu/categories.png";
+
+  // Profile
+  static const String defaultProfile =
+      "assets/images/profile/default.cover.jpg";
 }
