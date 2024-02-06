@@ -1,23 +1,23 @@
-# Bhutan Job Seeker App
+## Bhutan Job Seeker App
 
-## Overview
+### Overview
 
 The Bhutan Job Seeker App is a mobile application built in Flutter to assist job seekers in Bhutan in finding relevant employment opportunities. The app provides a user-friendly interface for job seekers to explore, search, and apply for jobs across various industries.
 
-## Features
+### Features
 
 - **Job Listings:** Browse through a curated list of job openings.
 - **Search Functionality:** Easily search for jobs based on keywords, location, or industry.
 - **Job Details:** View detailed information about each job, including requirements and responsibilities.
 - **Application Process:** Apply for jobs directly through the app.
 
-## Getting Started
+### Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 - Make sure you have Flutter installed. If not, follow the [Flutter installation guide](https://flutter.dev/docs/get-started/install).
 
-### Installation
+#### Installation
 
 1. Clone the repository:
 
@@ -28,7 +28,7 @@ The Bhutan Job Seeker App is a mobile application built in Flutter to assist job
 2. Change into the project directory:
 
    ```bash
-   cd bhutan-job-seeker-app
+   cd druk-job
    ```
 
 3. Install dependencies:
@@ -37,7 +37,7 @@ The Bhutan Job Seeker App is a mobile application built in Flutter to assist job
    flutter pub get
    ```
 
-### Usage
+#### Usage
 
 Run the app on an emulator or a physical device:
 
