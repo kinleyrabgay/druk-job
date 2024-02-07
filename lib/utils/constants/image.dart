@@ -4,6 +4,12 @@ class DJImageString {
   static const String darkAppLogo = "assets/logos/logo.png";
   static const String lightAppLogo = "assets/logos/logo.png";
 
+  // ---- App
+  static const String pageUnderConstruction =
+      "assets/lotties/page_under_construction.json";
+  static const String emptyFolder = "assets/images/app/empty-folder.png";
+  static const String emptyPage = "assets/images/app/empty-page.png";
+
   // ------------- Menu ----------------------------------------------
   static const String home = 'assets/menu/home.png';
   static const String sell = 'assets/menu/home.png';

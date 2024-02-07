@@ -40,33 +40,53 @@ class ProfileScreen extends StatelessWidget {
               ProfilePhoto(controller: controller),
               const SizedBox(height: DJSizes.spaceBtwSections * 2),
 
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // General Information
-                  Text(
-                    'General Information',
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyLarge!
-                        .apply(decoration: TextDecoration.underline),
-                  ),
-                  const SizedBox(height: DJSizes.spaceBtwItems),
-
-                  const GeneralInfo(title: 'First Name', value: 'Kinley'),
-                  const SizedBox(height: DJSizes.spaceBtwItems),
-                  const GeneralInfo(title: 'Last Name', value: 'Rabgay'),
-                  const SizedBox(height: DJSizes.spaceBtwItems),
-                  const GeneralInfo(
-                      title: 'Short Bio',
-                      value:
-                          "I'm not really sure what you're after when it comes to the height of the TextField but you could definitely have a look at the TextStyle widget, with which you can manipulate the fontSize and/or height"),
-                ],
-              )
+              GeneralInformation(controller: controller)
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class GeneralInformation extends StatelessWidget {
+  const GeneralInformation({
+    super.key,
+    required this.controller,
+  });
+
+  final UserController controller;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // General Information
+        Text(
+          'General Information',
+          style: Theme.of(context)
+              .textTheme
+              .bodyLarge!
+              .apply(decoration: TextDecoration.underline),
+        ),
+        const SizedBox(height: DJSizes.spaceBtwItems),
+
+        GeneralInfo(
+          title: 'First Name',
+          value: controller.user.value.firstName,
+        ),
+        const SizedBox(height: DJSizes.spaceBtwItems),
+        GeneralInfo(
+          title: 'Last Name',
+          value: controller.user.value.lastName,
+        ),
+        const SizedBox(height: DJSizes.spaceBtwItems),
+        const GeneralInfo(
+          title: 'Short Bio',
+          value: "",
+        ),
+      ],
     );
   }
 }

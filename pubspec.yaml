@@ -46,6 +46,7 @@ flutter:
     - assets/images/onboarding/
     - assets/images/social/
     - assets/images/profile/
+    - assets/images/app/
 
     # Icon
     - assets/icons/

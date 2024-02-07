@@ -34,7 +34,7 @@ class GeneralInfo extends StatelessWidget {
               ),
               contentPadding:
                   const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12.0),
-              // hintText: value,
+              hintText: value,
               hintStyle: Theme.of(context).textTheme.labelLarge,
             ),
           ),
