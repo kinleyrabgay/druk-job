@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1056605330340-0gc4femcd43k01m8gh29tqndhmajpk0j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1056605330340-0gc4femcd43k01m8gh29tqndhmajpk0j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB51qX25S5WuFDwInVmrxaEiBR8eGQNFjQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1056605330340</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.drukJob</string>
+	<key>PROJECT_ID</key>
+	<string>druk-job</string>
+	<key>STORAGE_BUCKET</key>
+	<string>druk-job.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1056605330340:ios:b215e5f25d823c79297f31</string>
+</dict>
+</plist>
